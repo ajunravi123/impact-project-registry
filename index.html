@@ -8,6 +8,8 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+
+   
     <div class="header">
         <!-- Main container for the header and wave animation -->
       
@@ -39,9 +41,9 @@
       </div>
       <!-- Header ends -->
 
+     
 
-
-    <div class="container">
+    <div class="container" id="content">
         <!-- <h1 class="text-center my-4">Time Logging</h1> -->
         <div class="table-responsive">
             <table class="table table-bordered table-striped" id="timeLogTable">
@@ -83,6 +85,19 @@
             <h1>Success</h1>
             <p>Your submission is successfully received.</p>
             <label onclick="hideSuccessModal()">Ok</label>
+            </div>
+        </div>
+
+
+        <div id="mobileMessage" style="display: none;">
+            <div class="alert alert-info">
+                <strong>Notice:</strong> You are viewing this page on a mobile device.
+            </div>
+        </div>
+
+        <div id="mobileMessage" style="display: none;">
+            <div class="alert alert-info">
+                <strong>Notice:</strong> Please visit this page from a laptop or desktop device.
             </div>
         </div>
 

@@ -1,368 +1,421 @@
 .container {
-            max-width: 1200px;
-            margin-top: 30px;
-        }
+    max-width: 1200px;
+    margin-top: 30px;
+}
 
-        .error-message {
-            color: red;
-            font-size: 14px;
-            text-align: center;
-            margin-top: 10px;
-            display: none;
-        }
+.error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
 
-        .delete-btn {
-            background-color: transparent;
-            border: none;
-            color: #dc3545;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    color: #dc3545;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 
-        .delete-btn:hover {
-            color: #c82333;
-        }
+.delete-btn:hover {
+    color: #c82333;
+}
 
-        .btn-back {
-            margin-top: 20px;
-        }
+.btn-back {
+    margin-top: 20px;
+}
 
-        th {
-            text-align: center;
-            position: relative;
-        }
+th {
+    text-align: center;
+    position: relative;
+}
 
-        th .back-arrow {
-            position: absolute;
-            left: 10px;
-            top: 10px;
-            cursor: pointer;
-        }
+th .back-arrow {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+}
 
-        td {
-            text-align: center;
-        }
+td {
+    text-align: center;
+}
 
-        .table {
-            table-layout: fixed;
-            width: 100%;
-        }
+.table {
+    table-layout: fixed;
+    width: 100%;
+}
 
-        .table th, .table td {
-            word-wrap: break-word;
-        }
+.table th, .table td {
+    word-wrap: break-word;
+}
 
-        .table select {
-            width: 100%;
-        }
+.table select {
+    width: 100%;
+}
 
-        .table th, .table td {
-            max-width: 150px;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 100%;
-            height: 100vh; /* Take full viewport height */
-            padding: 10px 30px; /* Some padding around the content */
-            box-sizing: border-box;
-            overflow-y: auto; /* Allow scrolling if content overflows */
-        }
-
-        #fridayHeader{
-            font-size: 14px;
-            background: #e2e3ee;
-        }
-
-        .readable_date {
-            color: #807878;
-            font-size: 12px;
-        }
-
-        table td:first-child, table th:first-child {
-            background-color: #f3f3f5; /* Replace with your preferred color */
-        }
-
-
-
-
-
-
-
-
-        @import url(//fonts.googleapis.com/css?family=Lato:300:400:bold); /* Importing Google Fonts */
-
-        
-
-        h1 {
-        font-family: "Lato", sans-serif; /* Setting the font for the heading */
-        font-weight: bold; /* Bold text */
-        letter-spacing: 2px; /* Adding spacing between characters */
-        font-size: 26px; /* Setting large font size for desktop */
-        }
-
-        .header {
-        position: relative;
-        text-align: center; /* Centering text */
-        /* Adding gradient background animation */
-        background: linear-gradient(-45deg, #30cfd0, #667eea, #764ba2, #330867);
-        background-size: 400% 400%; /* Allowing the background to move */
-        animation: gradient 15s ease infinite; /* Animating the gradient */
-        color: white; /* Text color white */
-        }
-
-        .inner-header {
-        height: 4vh; /* The height is 65% of the viewport */
-        width: 100%; /* Full width */
-        display: flex; /* Using flexbox for centering content */
-        justify-content: center; /* Horizontally centering content */
-        align-items: center; /* Vertically centering content */
-        text-align: center; /* Text aligned to the center */
-        }
-
-        .waves {
-        position: relative;
-        width: 100%; /* Full width */
-        height: 12vh; /* The height is 15% of the viewport */
-        margin-bottom: -7px; /* Fixes a gap issue for Safari */
-        min-height: 100px; /* Minimum height */
-        max-height: 150px; /* Maximum height */
-        }
-
-        /* Animation for wave parallax */
-        .wave-parallax > use {
-        /* Infinite animation to move the waves */
-        animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-        }
-
-        /* Animating different wave layers at varying speeds */
-        .wave-parallax > use:nth-child(1) {
-        animation-delay: -2s; /* Delayed by 2 seconds */
-        animation-duration: 7s; /* Animation duration is 7 seconds */
-        }
-        .wave-parallax > use:nth-child(2) {
-        animation-delay: -3s; /* Delayed by 3 seconds */
-        animation-duration: 10s; /* Animation duration is 10 seconds */
-        }
-        .wave-parallax > use:nth-child(3) {
-        animation-delay: -4s; /* Delayed by 4 seconds */
-        animation-duration: 13s; /* Animation duration is 13 seconds */
-        }
-        .wave-parallax > use:nth-child(4) {
-        animation-delay: -5s; /* Delayed by 5 seconds */
-        animation-duration: 20s; /* Animation duration is 20 seconds */
-        }
-
-        /* Animation for the wave movement */
-        @keyframes move-forever {
-        0% {
-            transform: translate3d(-90px, 0, 0); /* Starting position */
-        }
-        100% {
-            transform: translate3d(85px, 0, 0); /* Ending position */
-        }
-        }
-
-        /* Animation for the background gradient */
-        @keyframes gradient {
-        0% {
-            background-position: 0% 50%; /* Starting position of the gradient */
-        }
-        50% {
-            background-position: 100% 50%; /* Midway position of the gradient */
-        }
-        100% {
-            background-position: 0% 50%; /* Ending position of the gradient */
-        }
-        }
-
-        /* Media query for smaller screens */
-        @media (max-width: 768px) {
-        .waves {
-            height: 40px; /* Reducing wave height on mobile */
-            min-height: 40px;
-        }
-        .content {
-            height: 30vh; /* Adjusting content height for smaller screens */
-        }
-        h1 {
-            font-size: 24px; /* Smaller font size for mobile devices */
-        }
-        }
-
-        /* Subscribe button styles */
-        .subscribe-btn {
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-        color: var(--accent-color);
-        }
-
-        /* SVG inside subscribe button */
-        .subscribe-btn svg {
-        height: 60px;
-        width: 60px;
-        }
-
-        /* Floating YouTube Button Styling */
-        .youtube-button {
-        position: fixed;
-        bottom: 20px; /* Distance from the bottom */
-        right: 20px; /* Distance from the right */
-        background-color: #ff0000; /* YouTube red color */
-        color: white;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease;
-        z-index: 2;
-        }
-
-        /* Icon Styling */
-        .youtube-button i {
-        font-size: 24px;
-        }
-
-        /* Hover Effect */
-        .youtube-button:hover {
-        background-color: #e60000; /* Darker shade of red */
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-        transform: translateY(-2px); /* Slight upward movement */
-        }
-
-
-        .imglogo {
-            vertical-align: middle;
-            border-style: none;
-            width: 160px;
-            margin-left: 20px;
-            margin-top: 14px;
-            /* padding-left: 16px; */
-            float: left;
-        }
-
-
-
-
-
-        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
-
-        .frame {
-        position: absolute;
-        inset: calc(50% - 200px);
-        border-radius: 2px;
-        box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
-        overflow: hidden;
-        background: #3F3F3F;
-        color: #415868;
-        font-family: 'Open Sans', Helvetica, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        display: grid;
-        place-content: center;
-        }
-
-        /* .modal {
-        width: 280px;
-        height: 210px;
-        background: #fff;
-        border-radius: 3px;
-        box-shadow: 4px 8px 12px 0 rgba(0,0,0,0.4);
-        text-align: center;
-        overflow: hidden;
-        animation: show-modal 0.7s ease-in-out;
-        box-sizing: border-box;
-        padding-top: 24px;
-        display: none; 
-        } */
-
-
-.modal {
-    margin-left: 40%;
-    margin-top: 14%;
-  width: 280px;
-  height: 210px;
-  background: #fff;
-  border-radius: 3px;
-  box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.4);
-  text-align: center;
-  overflow: hidden;
-  animation: show-modal 0.7s ease-in-out;
-  box-sizing: border-box;
-  padding-top: 24px;
-  display: none; /* Hidden by default */
+.table th, .table td {
+    max-width: 150px;
 }
 
 
-        .modal h1 {
-        font-size: 18px;
-        line-height: 24px;
-        font-weight: 400;
-        margin: 14px 0 5px 0;
-        }
 
-        .modal p {
-        font-size: 14px;
-        line-height: 19px;
-        font-weight: 300;
-        margin: 0;
-        padding-inline: 30px;
-        }
 
-        .modal label {
-        line-height: 40px;
-        display: block;
-        margin-top: 24px;
-        color: #fff;
-        font-size: 14px;
-        cursor: pointer;
-        transition: background 0.3s ease-in-out;
-        }
 
-        #modal label{
-        background: #F65656;
-            
-        }
 
-        #modal2 label{
-            background: #15901f;
 
-        }
+.container {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh; /* Take full viewport height */
+    padding: 10px 30px; /* Some padding around the content */
+    box-sizing: border-box;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
 
-        #modal label:hover {
-        background: #EC3434;
-        }
+#fridayHeader{
+    font-size: 14px;
+    background: #e2e3ee;
+}
 
-        #modal2 label:hover {
-        background: #00b913;
-        }
+.readable_date {
+    color: #807878;
+    font-size: 12px;
+}
 
-        @keyframes show-modal {
-        0% {
-            transform: scale(0);
-        }
-        60% {
-            transform: scale(1.1);
-        }
-        80% {
-            transform: scale(0.95);
-        }
-        }
+table td:first-child, table th:first-child {
+    background-color: #f3f3f5; /* Replace with your preferred color */
+}
 
-        @keyframes hide-modal {
-        20% {
-            transform: scale(1.1);
-        }
-        100% {
-            transform: scale(0);
-        }
-        }
 
-        .hide {
-        animation: hide-modal 0.6s ease-in-out both;
-        }
+
+
+
+
+
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400:bold); /* Importing Google Fonts */
+
+
+
+h1 {
+font-family: "Lato", sans-serif; /* Setting the font for the heading */
+font-weight: bold; /* Bold text */
+letter-spacing: 2px; /* Adding spacing between characters */
+font-size: 26px; /* Setting large font size for desktop */
+}
+
+.header {
+position: relative;
+text-align: center; /* Centering text */
+/* Adding gradient background animation */
+background: linear-gradient(-45deg, #30cfd0, #667eea, #764ba2, #330867);
+background-size: 400% 400%; /* Allowing the background to move */
+animation: gradient 15s ease infinite; /* Animating the gradient */
+color: white; /* Text color white */
+}
+
+.inner-header {
+height: 4vh; /* The height is 65% of the viewport */
+width: 100%; /* Full width */
+display: flex; /* Using flexbox for centering content */
+justify-content: center; /* Horizontally centering content */
+align-items: center; /* Vertically centering content */
+text-align: center; /* Text aligned to the center */
+}
+
+.waves {
+position: relative;
+width: 100%; /* Full width */
+height: 12vh; /* The height is 15% of the viewport */
+margin-bottom: -7px; /* Fixes a gap issue for Safari */
+min-height: 100px; /* Minimum height */
+max-height: 150px; /* Maximum height */
+}
+
+/* Animation for wave parallax */
+.wave-parallax > use {
+/* Infinite animation to move the waves */
+animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+/* Animating different wave layers at varying speeds */
+.wave-parallax > use:nth-child(1) {
+animation-delay: -2s; /* Delayed by 2 seconds */
+animation-duration: 7s; /* Animation duration is 7 seconds */
+}
+.wave-parallax > use:nth-child(2) {
+animation-delay: -3s; /* Delayed by 3 seconds */
+animation-duration: 10s; /* Animation duration is 10 seconds */
+}
+.wave-parallax > use:nth-child(3) {
+animation-delay: -4s; /* Delayed by 4 seconds */
+animation-duration: 13s; /* Animation duration is 13 seconds */
+}
+.wave-parallax > use:nth-child(4) {
+animation-delay: -5s; /* Delayed by 5 seconds */
+animation-duration: 20s; /* Animation duration is 20 seconds */
+}
+
+/* Animation for the wave movement */
+@keyframes move-forever {
+0% {
+    transform: translate3d(-90px, 0, 0); /* Starting position */
+}
+100% {
+    transform: translate3d(85px, 0, 0); /* Ending position */
+}
+}
+
+/* Animation for the background gradient */
+@keyframes gradient {
+0% {
+    background-position: 0% 50%; /* Starting position of the gradient */
+}
+50% {
+    background-position: 100% 50%; /* Midway position of the gradient */
+}
+100% {
+    background-position: 0% 50%; /* Ending position of the gradient */
+}
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+.waves {
+    height: 40px; /* Reducing wave height on mobile */
+    min-height: 40px;
+}
+.content {
+    height: 30vh; /* Adjusting content height for smaller screens */
+}
+h1 {
+    font-size: 24px; /* Smaller font size for mobile devices */
+}
+}
+
+/* Subscribe button styles */
+.subscribe-btn {
+position: fixed;
+bottom: 10px;
+right: 10px;
+color: var(--accent-color);
+}
+
+/* SVG inside subscribe button */
+.subscribe-btn svg {
+height: 60px;
+width: 60px;
+}
+
+/* Floating YouTube Button Styling */
+.youtube-button {
+position: fixed;
+bottom: 20px; /* Distance from the bottom */
+right: 20px; /* Distance from the right */
+background-color: #ff0000; /* YouTube red color */
+color: white;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+transition: all 0.3s ease;
+z-index: 2;
+}
+
+/* Icon Styling */
+.youtube-button i {
+font-size: 24px;
+}
+
+/* Hover Effect */
+.youtube-button:hover {
+background-color: #e60000; /* Darker shade of red */
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+transform: translateY(-2px); /* Slight upward movement */
+}
+
+
+.imglogo {
+    vertical-align: middle;
+    border-style: none;
+    width: 160px;
+    margin-left: 20px;
+    margin-top: 14px;
+    /* padding-left: 16px; */
+    float: left;
+}
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+.frame {
+position: absolute;
+inset: calc(50% - 200px);
+border-radius: 2px;
+box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+overflow: hidden;
+background: #3F3F3F;
+color: #415868;
+font-family: 'Open Sans', Helvetica, sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+display: grid;
+place-content: center;
+}
+
+/* .modal {
+width: 280px;
+height: 210px;
+background: #fff;
+border-radius: 3px;
+box-shadow: 4px 8px 12px 0 rgba(0,0,0,0.4);
+text-align: center;
+overflow: hidden;
+animation: show-modal 0.7s ease-in-out;
+box-sizing: border-box;
+padding-top: 24px;
+display: none; 
+} */
+
+
+.modal {
+margin-left: 40%;
+margin-top: 14%;
+width: 280px;
+height: 210px;
+background: #fff;
+border-radius: 3px;
+box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.4);
+text-align: center;
+overflow: hidden;
+animation: show-modal 0.7s ease-in-out;
+box-sizing: border-box;
+padding-top: 24px;
+display: none; /* Hidden by default */
+}
+
+
+.modal h1 {
+font-size: 18px;
+line-height: 24px;
+font-weight: 400;
+margin: 14px 0 5px 0;
+}
+
+.modal p {
+font-size: 14px;
+line-height: 19px;
+font-weight: 300;
+margin: 0;
+padding-inline: 30px;
+}
+
+.modal label {
+line-height: 40px;
+display: block;
+margin-top: 24px;
+color: #fff;
+font-size: 14px;
+cursor: pointer;
+transition: background 0.3s ease-in-out;
+}
+
+#modal label{
+background: #F65656;
+    
+}
+
+#modal2 label{
+    background: #15901f;
+
+}
+
+#modal label:hover {
+background: #EC3434;
+}
+
+#modal2 label:hover {
+background: #00b913;
+}
+
+@keyframes show-modal {
+0% {
+    transform: scale(0);
+}
+60% {
+    transform: scale(1.1);
+}
+80% {
+    transform: scale(0.95);
+}
+}
+
+@keyframes hide-modal {
+20% {
+    transform: scale(1.1);
+}
+100% {
+    transform: scale(0);
+}
+}
+
+.hide {
+animation: hide-modal 0.6s ease-in-out both;
+}
+
+
+
+
+
+
+
+
+/* Center the mobile message */
+#mobileMessage {
+padding-left: 16px;
+padding-right: 16px;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+/* background-color: rgba(0, 0, 0, 0.5); */
+z-index: 1000;
+}
+
+#mobileMessage .alert {
+background-color: #f8d7da; /* Red background for the alert */
+color: #721c24; /* Dark text color for the alert */
+border-color: #f5c6cb; /* Light red border */
+padding: 20px;
+border-radius: 5px;
+max-width: 600px;
+text-align: center;
+}
+
+/* Style the content */
+
+
+/* Show the mobile message and hide content for mobile devices */
+@media (max-width: 768px) {
+#mobileMessage {
+display: flex;  /* Show the mobile message as a flex container */
+}
+
+#content {
+display: none;  /* Hide content for mobile devices */
+}
+}
