@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Logging Interface</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <!-- Main container for the header and wave animation -->
+      
+        <!--Content before waves-->
+        <img class="imglogo" src="logo.png"/></img>
+        <div class="inner-header">
+          <h1>Productivity Tracker</h1> <!-- Main heading displayed before the wave animation -->
+        </div>
+      
+        <!--Waves Container-->
+        <div>
+          <!-- SVG for waves animation -->
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <!-- Defining SVG element for waves -->
+            <defs>
+              <!-- Defining the wave path once to reuse it for creating multiple wave layers -->
+              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="wave-parallax">
+              <!-- Group of waves that will move at different speeds to create a parallax effect -->
+              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" /> <!-- First wave layer -->
+              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" /> <!-- Second wave layer -->
+              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" /> <!-- Third wave layer -->
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" /> <!-- Fourth wave layer -->
+            </g>
+          </svg>
+        </div>
+        <!-- Waves end -->
+      </div>
+      <!-- Header ends -->
+
+
+
+    <div class="container">
+        <!-- <h1 class="text-center my-4">Time Logging</h1> -->
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped" id="timeLogTable">
+                <thead>
+                    <tr id="fridayHeader">
+                        <th>
+                            <!-- <span class="back-arrow" id="backWeeksBtn">&#8592;</span> -->
+                            Project Name
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="projectRows">
+                    <!-- Rows will be dynamically inserted -->
+                </tbody>
+            </table>
+        </div>
+        <div class="text-left">
+            <button class="btn btn-primary" id="addProjectBtn">+ Add New Project</button>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-success" id="submitBtn">Submit</button>
+        </div>
+        <div class="error-message" id="errorMessage">Total percentage for all the weeks must equal 100%!</div>
+    </div>
+
+    
+        <div id="ebox">
+            <div class="modal" id="modal">
+            <img src="alert.png" width="44" height="38" />
+            <h1>Validation Error!</h1>
+            <p>The total percentage must be equal to 100</p>
+            <label onclick="hideModal()">Dismiss</label>
+            </div>
+        </div>
+
+        <div>
+            <div class="modal" id="modal2">
+            <img src="tick.png" width="44" height="38" />
+            <h1>Success</h1>
+            <p>Your submission is successfully received.</p>
+            <label onclick="hideSuccessModal()">Ok</label>
+            </div>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
